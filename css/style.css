@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Merriweather', serif;
+    font-size: .95em;
+  }
+  
+  p,
+  label {
+    color: gray;
+  }
+  
+  
+  h1 {
+    text-align: center;
+    color: white;
+    background-color: #112540;
+    padding: 20px 0;
+    margin: auto;
+  }
+  
+  h2 {
+    color: #112540;
+    font-size: 1.3em;
+  
+  }
+  
+  .wrapper {
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .border {
+    margin-top: 3px;
+    border-top: 2px solid  #112540;
+    border-bottom: 2px solid #112540;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  .header {
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #112540;
+  }
+  
+  .header-label {
+    margin-top: 30px;
+  }
+  
+  
+  label {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  legend ~ label {
+    margin-bottom: 15px;
+    font-size: .9em;
+  }
+  
+  
+  p ~ label {
+    margin-left: 10px;
+  }
+  
+  
+  .txtarea {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  
+  
+  .default-theme {
+    color:#8a97a0;
+    background-color: #e8eeef;
+    border: 2px solid #e8eeef;
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    outline: 0;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  input:focus {
+    border-color: #112540;
+  }
+  
+  
+  select {
+    padding: 10px 0;
+    height: 52px;
+  }
+  
+  input[name*="user_zip"] {
+    width: 125px;
+  }
+  
+  input::placeholder {
+    font-style: italic;
+    text-align: right;
+    font-size: .8em;
+    padding: 5px 0;
+  }
+  
+  button {
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    background-color: #25BABA;
+    border: 1px solid #25BABA;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #177575;
+  }
+  
+  .mainfooter {
+    text-align: center;
+    color: #BABABA;
+    height: 300px;
+  }
+  
+  
+  /* ===============
+     Media Query
+     ===============  */
+  
+  @media (min-width: 768px) {
+    .wrapper {
+      max-width: 768px;
+    }
+  
+    .container {
+      display: flex;
+    }
+  
+    .contact-label {
+      flex-basis: 150px;
+      align-self: center;
+      margin-right: 50px;
+    }
+  
+    .zip-label {
+      flex-basis: 115px;
+    }
+  
+    input[name*="user_zip"] {
+      width: 200px;
+    }
+  
+  
+  }

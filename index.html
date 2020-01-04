@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>THE CODE REVIEW</h1>
+    <div class="wrapper">
+     <div class="header">
+       <h2 class="header-label">Signup for our newsletter</h2>
+       <p>Get the latest news on how your code is doing
+       right in your inbox.</p>
+     </div>
+
+    <form action="index.html" method="post">
+      <fieldset class="border">
+       <h2>Contact Information</h2>
+
+        <div class="container">
+          <label  class="contact-label" for="name">Full Name</label>
+          <input class="default-theme" type="text" name="user_name" id="name" placeholder="Required" required>
+        </div>
+        <div class="container">
+          <label class="contact-label" for="email">Email Address</label>
+          <input class="default-theme" type="email" name="user_email" id="email" placeholder="Required" required>
+        </div>
+
+        <div class="container">
+          <label class="contact-label" for="phone">Phone Number</label>
+          <input class="default-theme" type="tel" name="user_phone" id="phone">
+        </div>
+
+        <div class="container">
+          <label class="contact-label" for="srt">Street Address</label>
+          <input class="default-theme" type="text" name="user_address" id="srt">
+        </div>
+
+        <div class="container">
+          <label class="contact-label" for="city">City</label>
+          <input class="default-theme" type="text" name="user_city" id="city">
+        </div>
+
+        <div class="container">
+          <label class="contact-label" for="state">State</label>
+            <select class="default-theme" id="state" name="user_state" >
+                <option value="">Choose State</option>
+                <option value="alabama">Alabama</option>
+                <option value="alaska">Alaska</option>
+                <option value="arizona">Arizona</option>
+                <option value="arkansas">Arkansas</option>
+                <option value="california">California</option>
+            </select>
+        </div>
+
+        <div class="container">
+          <label class="contact-label zip-label" for="zip">Zip Code</label><br>
+          <input class="default-theme zip-theme" type="text" name="user_zip" id="zip">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <h2>Newsletter</h2>
+          <p>Select the newsletters you would like to receive.</p>
+
+          <input type="checkbox" name="html" value="html_news" id="html_news">
+          <label for="html_news" class="news">HTML News</label><br>
+
+          <input type="checkbox" name="css" value="css_news" id="css_news">
+          <label for="css_news" class="news">CSS News</label><br>
+
+          <input type="checkbox" name="js" value="js_news" id="js_news">
+          <label for="js_news" class="news">Javascript News</label>
+
+          <p>Newsletter format</p>
+          <input type="radio" name="news_format" value="html_format" id="html_format">
+          <label for="html_format" class="news">HTML</label><br>
+          <input type="radio" name="news_format" value="plain_text" id="plain_text">
+          <label for="plain_text" class="news">Plain text</label><br>
+
+          <label for="textarea" class="txtarea">Other topics you'd like to hear about</label>
+          <textarea class="default-theme" name="othertopics" id="textarea"></textarea>
+
+          <button type="button" name="button">Sign Up</button>
+      </fieldset>
+     </form>
+    <footer class="mainfooter"><i>Copyright The Code Review</i></footer>
+   </div>
+  </body>
+</html>
