@@ -19,7 +19,7 @@
     background-color: #112540;
     padding: 20px 0;
     margin: auto;
-    background: linear-gradient(black, steelblue);
+    background: linear-gradient(#02157c, hsl(212, 58%, 38%));
   }
 
   hr {
