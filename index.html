@@ -16,12 +16,12 @@
        <p>Get the latest news on how your code is doing
        right in your inbox.</p>
      </div>
-
+     <hr></hr>
     <form action="index.html" method="post">
-      <fieldset class="border">
-       <h2>Contact Information</h2>
+      <fieldset class="fieldset">
+       <legend>Contact Information</legend>
 
-        <div class="container">
+        <div class="container firstContainer">
           <label  class="contact-label" for="name">Full Name</label>
           <input class="default-theme" type="text" name="user_name" id="name" placeholder="Required" required>
         </div>
@@ -63,8 +63,10 @@
         </div>
       </fieldset>
 
-      <fieldset>
-        <h2>Newsletter</h2>
+      <hr></hr>
+
+      <fieldset class="fieldset">
+        <legend>Newsletter</legend>
           <p>Select the newsletters you would like to receive.</p>
 
           <input type="checkbox" name="html" value="html_news" id="html_news">

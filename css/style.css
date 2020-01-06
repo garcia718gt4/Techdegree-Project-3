@@ -19,12 +19,16 @@
     background-color: #112540;
     padding: 20px 0;
     margin: auto;
+    background: linear-gradient(black, steelblue);
+  }
+
+  hr {
+    border: 1px solid black; 
   }
   
-  h2 {
+  legend {
     color: #112540;
     font-size: 1.3em;
-  
   }
   
   .wrapper {
@@ -32,15 +36,20 @@
     margin: auto;
   }
   
-  .border {
-    margin-top: 3px;
-    border-top: 2px solid  #112540;
-    border-bottom: 2px solid #112540;
+  .fieldset {
+    margin-top: 35px;
+    /* border-top: 2px solid red; */
+    /* border-bottom: 2px solid #112540; */
   }
-  
+
+  .firstContainer {
+      margin-top: 30px; 
+  }
+
   fieldset {
-    border: none;
+    border: none; 
   }
+
   
   .header {
     text-align: center;
@@ -86,6 +95,11 @@
     margin-bottom: 30px;
     border-radius: 4px;
     outline: 0;
+  }
+
+  .default-theme:hover {
+      background-color: #dbe2e2;
+      border:2px solid #dbe2e2;
   }
   
   textarea {
