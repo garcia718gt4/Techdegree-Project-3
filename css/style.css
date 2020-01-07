@@ -38,8 +38,6 @@
   
   .fieldset {
     margin-top: 35px;
-    /* border-top: 2px solid red; */
-    /* border-bottom: 2px solid #112540; */
   }
 
   .firstContainer {
@@ -97,9 +95,11 @@
     outline: 0;
   }
 
+  
   .default-theme:hover {
+      transition: 0.3s;
       background-color: #dbe2e2;
-      border:2px solid #dbe2e2;
+      border: 2px solid #dbe2e2;
   }
   
   textarea {
